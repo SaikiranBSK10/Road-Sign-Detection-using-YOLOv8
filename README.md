@@ -12,9 +12,9 @@ This project involves:
 4. Visual Results: Saves predictions with annotated bounding boxes for visualization.
 ### Model Training
 The model is trained using YOLOv8n.pt (a lightweight pretrained YOLO model) for 30 epochs with optimized hyperparameters:
-''' 
+`
 model.train(data='/content/Road_Sign_Detection/data.yaml', epochs=30, batch=-1, optimizer='auto', amp=True)
-''' 
+`
 ### Evaluation
 The project computes IoU to evaluate predictions against ground-truth labels:
 1. IoU Calculation: Measures the overlap between predicted and ground-truth bounding boxes.
